@@ -4,5 +4,5 @@
 
 FROM adoptopenjdk/openjdk8
 EXPOSE 8080
-ADD target/DemoBuildJenkins.jar DemoBuildJenkins.jar
+ADD dist/DemoBuildJenkins.jar DemoBuildJenkins.jar
 entrypoint ["java", "-jar", "/DemoBuildJenkins.jar"]
